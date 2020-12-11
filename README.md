@@ -6,6 +6,14 @@ Create a new ring or add an entry to one of the existing JSONs.
 
 Rings are available at https://openwebring.com/ring/[slug].json
 
+## Goals
+
+- Free, serverless webrings for anyone that wants to join.
+- Heavily leverage GH ecosystem.
+- Enforce participation / auto moderation
+- Use github as a JSON api
+- Record changes to rings via git
+
 ## TODO
 
 1. Define schema
@@ -16,3 +24,4 @@ Rings are available at https://openwebring.com/ring/[slug].json
    1. filter / highlight your site
 5. how big can rings get?
 6. Add a github action to check if webring is on site
+7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
