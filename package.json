@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mldangelo/open-webring/issues"
   },
-  "homepage": "https://github.com/mldangelo/open-webring#readme"
+  "homepage": "https://github.com/mldangelo/open-webring#readme",
+  "dependencies": {
+    "ajv": "^6.12.6",
+    "glob": "^7.1.6"
+  }
 }

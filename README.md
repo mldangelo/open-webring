@@ -31,6 +31,8 @@ Do you remember when the internet used to be fun? Back in the days before search
 7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
 8. Shoud webrings also have descriptive text? 
 9. Also render JSON to html for iframe 
+10. Define schema to describe rings - each ring should have a slug, title, purpose, etc. Qualifications for membership 
+11. 1 ring per site? 
 
 ## References
 
