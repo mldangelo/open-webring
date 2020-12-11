@@ -6,6 +6,8 @@ Create a new ring or add an entry to one of the existing JSONs.
 
 Rings are available at https://openwebring.com/ring/[slug].json
 
+## Manifesto
+
 ## Goals
 
 - Free, serverless webrings for anyone that wants to join.
@@ -31,3 +33,5 @@ Rings are available at https://openwebring.com/ring/[slug].json
 1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
 2. https://github.com/hackclub/webring
 3. https://github.com/topics/webring
+4. https://github.com/palantir/bulldozer
+5. 
