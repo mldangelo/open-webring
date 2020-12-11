@@ -29,3 +29,5 @@ Rings are available at https://openwebring.com/ring/[slug].json
 ## References
 
 1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
+2. https://github.com/hackclub/webring
+3. https://github.com/topics/webring
