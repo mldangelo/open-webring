@@ -1,12 +1,14 @@
 # open-webring
 
-Join a webring or create your own.
+Join a webring, create your own, or fork this repository and host your own.
 
 Create a new ring or add an entry to one of the existing JSONs.
 
 Rings are available at https://openwebring.com/ring/[slug].json
 
 ## Manifesto
+
+Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, webrings were the de-facto way to discover content. 
 
 ## Goals
 
@@ -27,6 +29,8 @@ Rings are available at https://openwebring.com/ring/[slug].json
 5. how big can rings get?
 6. Add a github action to check if webring is on site
 7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
+8. Shoud webrings also have descriptive text? 
+9. Also render JSON to html for iframe 
 
 ## References
 
