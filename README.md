@@ -25,3 +25,7 @@ Rings are available at https://openwebring.com/ring/[slug].json
 5. how big can rings get?
 6. Add a github action to check if webring is on site
 7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
+
+## References
+
+1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
