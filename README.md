@@ -1,13 +1,16 @@
 # open-webring
 
-Join a webring, create your own, or fork this repository and host your own.
+Join a webring, create your own, or fork this repository and host your own for free.
 
-Create a new ring or add an entry to one of the existing JSONs.
+Rings are available at https://openwebring.com/ring/[slug].json. See the [sample](https://openwebring.com/ring/sample.json) webring for an example.
 
-Rings are available at https://openwebring.com/ring/[slug].json
+## Manifesto
+
+Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbiests, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help surfers discover great content. 
+
+TODO: Talk about membership.
 
 ## How To Join a Webring
-
 
 1. Add an entry to the ring you wish to join  in [/ring](/ring) and submit a PR to this repository. For example, we can join the [sample](/ring/sample.json) webring which has the has the schema definition:
 
@@ -52,21 +55,17 @@ Rings are available at https://openwebring.com/ring/[slug].json
 
 3. After we've validated that you have added open-webring to your site, we'll merge your PR and welcome you into the community. 
 
-## Manifesto
-
-Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, webrings were the de-facto way to discover content. 
-
 ## Goals
 
 - Free, serverless webrings for anyone that wants to join.
-- Heavily leverage GH ecosystem.
+- Use github as a JSON api - Heavily leverage GH ecosystem.
+- track changes to rings via git diff.
 - Enforce participation / auto moderation
-- Use github as a JSON api
-- Record changes to rings via git
 
 ## TODO
 
 1. Define schema
+  - Should different rings have different schema?
 2. validate schema
 3. Define how changes are approved
    1. - rate limit?
@@ -81,6 +80,7 @@ Do you remember when the internet used to be fun? Back in the days before search
 11. 1 ring per site? 
 12. Support for custom renderers
 13. Should web rings be ordered? What should the order be?
+14. Auto generate index
 
 
 ## References
@@ -89,4 +89,4 @@ Do you remember when the internet used to be fun? Back in the days before search
 2. https://github.com/hackclub/webring
 3. https://github.com/topics/webring
 4. https://github.com/palantir/bulldozer
-5. Ian's webring (?)
+5. Ian's webring - http://www.ianww.com/ 
