@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Michael D'Angelo",
+        "site": "https://mldangelo.com",
+        "title": "Software Engineer"
+    },
+    {
+        "name": "Ian Webster",
+        "site": "https://ianww.com",
+        "title": "Hacker Extraordinaire" 
+    },
+    {
+        "name": "Judy",
+        "site": "http://www.judymou.com",
+        "title": "Staff Software Engineer"    
+    }
+]
