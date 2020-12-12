@@ -2,6 +2,7 @@
 
 # next.js
 /.next/
+out/*
 
 # Logs
 logs

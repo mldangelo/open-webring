@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && cp CNAME out/CNAME && git add -f out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "predeploy": "rm -rf node_modules/.cache && next build && next export && cp CNAME out/CNAME",
+    "deploy": "gh-pages -d out"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/mldangelo/open-webring#readme",
   "dependencies": {
     "ajv": "^6.12.6",
+    "gh-pages": "^3.1.0",
     "glob": "^7.1.6",
     "next": "latest",
     "react": "^17.0.1",
