@@ -9,13 +9,13 @@ Rings are available at https://openwebring.com/ring/[slug].json
 ## How To Join a Webring
 
 
-1. Fork this repository, add an entry to one of the jsons in [/ring](/ring) and submit a PR to this repository. For example, we can join the [sample](/ring/sample.json) webring which has the has the schema definition:
+1. Add an entry to the ring you wish to join  in [/ring](/ring) and submit a PR to this repository. For example, we can join the [sample](/ring/sample.json) webring which has the has the schema definition:
 
   ```json
       {
-        name: 'string',
-        title: 'string',
-        url: 'string'
+        "name": "string",
+        "title": "string",
+        "url": "string"
       }
   ```
 
@@ -23,13 +23,13 @@ Rings are available at https://openwebring.com/ring/[slug].json
 
   ```json
       {
-        name: "Michael D'Angelo",
-        title: "Software Engineer",
-        url: "https://mldangelo.com",
+        "name": "Michael D'Angelo",
+        "title": "Software Engineer",
+        "url": "https://mldangelo.com",
       }
   ```
 
-2. Webrings can be added to your site in many formats. The simplest way is to add:
+2. Add open-webring to your website. Webrings can be added to your site in many formats. The simplest way is to add:
 
   ```html
     <script async type="text/javascript" src="https://openwebring.com/ring/sample.js" charset="utf-8"></script>
@@ -50,7 +50,7 @@ Rings are available at https://openwebring.com/ring/[slug].json
       .then(data => console.log(data));
   ```
 
-3. Once you've added the webring to your site, we'll merge your PR and welcome you into the community. 
+3. After we've validated that you have added open-webring to your site, we'll merge your PR and welcome you into the community. 
 
 ## Manifesto
 
@@ -80,6 +80,8 @@ Do you remember when the internet used to be fun? Back in the days before search
 10. Define schema to describe rings - each ring should have a slug, title, purpose, etc. Qualifications for membership 
 11. 1 ring per site? 
 12. Support for custom renderers
+13. Should web rings be ordered? What should the order be?
+
 
 ## References
 
