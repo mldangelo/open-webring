@@ -1,5 +1,8 @@
 # Stolen from https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
 
+# next.js
+/.next/
+
 # Logs
 logs
 *.log
