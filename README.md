@@ -8,7 +8,6 @@ Rings are available at https://openwebring.com/ring/[slug].json. See the [sample
 
 Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbiests, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help web-surfers discover great content. 
 
-
 ![tesla-coil-webring](/docs/tesla-coil.png)
 
 *nostalgia from my childhood -from the now defunct [webring.org](https://web.archive.org/web/19991013135810/http://webring.org/)*
@@ -39,19 +38,20 @@ TODO: Talk about membership.
       }
   ```
 
-2. Add open-webring to your website. Webrings can be added to your site in many formats. The simplest way is to add:
+1. Add open-webring to your website. Webrings can be added to your site in many formats. The simplest way is to add:
 
   ```html
     <script async type="text/javascript" src="https://openwebring.com/ring/sample.js" charset="utf-8"></script>
   ```
-  to your website. 
+
+  to your website.
 
   Alternatively, you can add an iframe:
 
   ```html
     <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
-  ``` 
- 
+  ```
+
   Or fetch and parse the webring yourself using javascript
 
   ```javascript
@@ -60,7 +60,7 @@ TODO: Talk about membership.
       .then(data => console.log(data));
   ```
 
-3. After we've validated that you have added open-webring to your site, we'll merge your PR and welcome you into the community. 
+1. After we've validated that you have added open-webring to your site, we'll merge your PR and welcome you into the community. 
 
 ## Goals
 
@@ -81,8 +81,7 @@ This repository is split into multiple parts:
 
 ## TODO
 
-1. Define schema
-  - Should different rings have different schema?
+1. Define schema - Should different rings have different schema?
 2. validate schema
 3. Define how changes are approved
    1. - rate limit?
@@ -91,23 +90,23 @@ This repository is split into multiple parts:
 5. how big can rings get?
 6. Add a github action to check if webring is on site
 7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
-8. Shoud webrings also have descriptive text? 
-9. Also render JSON to html for iframe 
+8. Should webrings also have descriptive text?
+9. Also render JSON to html for iframe
 10. Define schema to describe rings - each ring should have a slug, title, purpose, etc. Qualifications for membership 
-11. 1 ring per site? 
+11. 1 ring per site?
 12. Support for custom renderers
 13. Should web rings be ordered? What should the order be?
 14. Auto generate index
-15. favicon - circularly linked list? 
+15. favicon - circularly linked list?
 16. Add tests for validating rings
 17. Consider re-implementing the old webring.org api ex http://www.webring.org/cgi-bin/webring?random&ring=TeslaRing or http://www.webring.org/cgi-bin/webring?ring=TeslaRing&id=158&next
-18. Ask for Sage Weil's blessing? 
+18. Ask for Sage Weil's blessing?
 
 ## References
 
 1. https://web.archive.org/web/19991013135810/http://webring.org/
 1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
-2. https://github.com/hackclub/webring
-3. https://github.com/topics/webring
-4. https://github.com/palantir/bulldozer
-5. Ian's webring - http://www.ianww.com/ 
+1. https://github.com/hackclub/webring
+1. https://github.com/topics/webring
+1. https://github.com/palantir/bulldozer
+1. Ian's webring - http://www.ianww.com/ 
