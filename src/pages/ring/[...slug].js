@@ -1,10 +1,11 @@
 import fs from 'fs';
 import path from 'path';
+import glob from 'glob';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const renderSite = site => (
-  <li>
+  <li key={site.link}>
     <Link href={site.link} as={site.link}>
       <a>{site.name}</a>
     </Link>{' '}
@@ -47,15 +48,17 @@ const Ring = ({ data }) => {
 };
 // This function gets called at build time
 export async function getStaticPaths() {
+  const files = glob.sync(path.join(process.cwd(), 'public/ring/**/*.json'));
+  // less stable than regex. couldn't get regex to work
+  const matches = files.map(
+    file => file.replace('.json', '').split('public/ring/')[1]
+  );
+  // const pattern = /\/public\/ring\/(.+).json$/g; // extracts file name from ring directory - json extension
+  // const matches = files.map((file) => pattern.exec(file));
   return {
-    // Only `/posts/1` and `/posts/2` are generated at build time
-    paths: [
-      { params: { slug: ['arthena'] } },
-      { params: { slug: ['sample'] } },
-      { params: { slug: ['space-potato'] } }
-    ],
-    // Enable statically generating additional pages
-    // For example: `/posts/3`
+    paths: matches.map(slug => {
+      return { params: { slug: [slug] } };
+    }),
     fallback: false
   };
 }

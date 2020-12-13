@@ -25,7 +25,7 @@ const Index = () => (
       <font face="helvetica">
         {rings.map(ring => {
           return (
-            <li>
+            <li key={ring.slug}>
               <b>
                 <Link href={`/ring/${ring.slug}`}>
                   <a>{ring.name}</a>
