@@ -2,7 +2,7 @@
 
 Join a webring, create your own, or fork this repository and host your own for free.
 
-Rings are available at https://openwebring.com/ring/[slug].json. See the [sample](ring/sample.json) webring for an example.
+Rings are available at https://openwebring.com/ring/[slug].json. See the [sample](public/ring/sample.json) webring for an example.
 
 ## Manifesto
 
@@ -19,7 +19,7 @@ TODO: Talk about membership.
 
 ## How To Join a Webring
 
-1. Add an entry to the ring you wish to join  in [/ring](/ring) and submit a PR to this repository. For example, we can join the [sample](/ring/sample.json) webring which has the has the schema definition:
+1. Add an entry to the ring you wish to join  in [public/ring](public/ring) and submit a PR to this repository. For example, we can join the [sample](public/ring/sample.json) webring which has the has the schema definition:
 
   ```json
       {
@@ -77,7 +77,7 @@ Developed with: node >= v14. [nvm](https://github.com/nvm-sh/nvm#installing-and-
 This repository is split into multiple parts: 
 
 1. [src](/src) which contains a Next.js app hosted at [openwebring.com](https://openwebring.com). 
-2. [ring](/ring) which contains webring schemas and data.
+2. [public/ring](public/ring) which contains webring schemas and data.
 
 ## TODO
 

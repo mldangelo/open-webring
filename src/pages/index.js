@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 
+import rings from '../../public/rings.json';
+
 const Index = () => (
   <>
     <NextSeo
@@ -18,9 +20,27 @@ const Index = () => (
       </Link>
       .
     </p>
-    <Link href="/about" as="/about">
-      <a>About</a>
-    </Link>
+
+    <ul>
+      {rings.map(ring => {
+        return (
+          <li>
+            <b>
+              <Link href={`/ring/${ring.slug}.json`}>
+                <a>{ring.name}</a>
+              </Link>
+            </b>
+            <font size="-1">
+              {' '}
+              - {ring.count} sites - <a href="">Home</a>
+            </font>
+            <br />
+            <font face="times">{ring.description}</font>
+            <p />
+          </li>
+        );
+      })}
+    </ul>
   </>
 );
 
