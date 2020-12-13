@@ -6,7 +6,7 @@ Rings are available at https://openwebring.com/ring/[slug].json. See the [sample
 
 ## Manifesto
 
-Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbiests, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help web-surfers discover great content. 
+Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbyists, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help web-surfers discover great content.
 
 ![tesla-coil-webring](/docs/tesla-coil.png)
 
@@ -69,7 +69,6 @@ TODO: Talk about membership.
 - track changes to rings via git diff.
 - Enforce participation / auto moderation
 
-
 ## Developing
 
 Developed with: node >= v14. [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) is recommended for managing node versions.
@@ -79,34 +78,10 @@ This repository is split into multiple parts:
 1. [src](/src) which contains a Next.js app hosted at [openwebring.com](https://openwebring.com). 
 2. [public/ring](public/ring) which contains webring schemas and data.
 
-## TODO
-
-1. Define schema - Should different rings have different schema?
-2. validate schema
-3. Define how changes are approved
-   1. - rate limit?
-4. Add sample code to get a webring
-   1. filter / highlight your site
-5. how big can rings get?
-6. Add a github action to check if webring is on site
-7. npm packages that are minimally scoped and auto publish - `const ring = require('open-webring/dumpster-fire');`
-8. Should webrings also have descriptive text?
-9. Also render JSON to html for iframe
-10. Define schema to describe rings - each ring should have a slug, title, purpose, etc. Qualifications for membership 
-11. 1 ring per site?
-12. Support for custom renderers
-13. Should web rings be ordered? What should the order be?
-14. Auto generate index
-15. favicon - circularly linked list?
-16. Add tests for validating rings
-17. Consider re-implementing the old webring.org api ex http://www.webring.org/cgi-bin/webring?random&ring=TeslaRing or http://www.webring.org/cgi-bin/webring?ring=TeslaRing&id=158&next
-18. Ask for Sage Weil's blessing?
-
-## References
+## Inspired By
 
 1. https://web.archive.org/web/19991013135810/http://webring.org/
-1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
-1. https://github.com/hackclub/webring
-1. https://github.com/topics/webring
-1. https://github.com/palantir/bulldozer
-1. Ian's webring - http://www.ianww.com/ 
+2. Ian's webring - http://www.ianww.com/ (probably would not have worked on this if I hadn't asked to join his webring)
+3. https://github.com/topics/webring - only 8 entries - none are communities
+4. https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli - best webring on github?
+5. https://github.com/hackclub/webring
