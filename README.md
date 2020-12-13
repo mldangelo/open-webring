@@ -81,6 +81,7 @@ TODO: Talk about membership.
 12. Support for custom renderers
 13. Should web rings be ordered? What should the order be?
 14. Auto generate index
+15. favicon - circularly linked list? 
 
 
 ## References
