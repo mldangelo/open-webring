@@ -4,18 +4,18 @@
     "sites": [
         {
             "name": "Ian Webster",
-            "site": "https://ianww.com",
+            "link": "https://ianww.com",
             "title": "Hacker Extraordinaire" 
         },
         {
 
             "name": "Michael D'Angelo",
-            "site": "https://mldangelo.com",
+            "link": "https://mldangelo.com",
             "title": "Software Engineer"
         },
         {
             "name": "Judy",
-            "site": "http://www.judymou.com",
+            "link": "http://www.judymou.com",
             "title": "Staff Software Engineer"    
         }
     ]

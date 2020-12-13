@@ -1,20 +1,20 @@
 {
     "name": "Sample Webring",
-    "description": "Short description of the pupose of the web ring.",
+    "description": "Short description of the purpose of the web ring.",
     "sites": [
         {
             "name": "Michael D'Angelo",
-            "site": "https://mldangelo.com",
+            "link": "https://mldangelo.com",
             "title": "Software Engineer"
         },
         {
             "name": "Ian Webster",
-            "site": "https://ianww.com",
+            "link": "https://ianww.com",
             "title": "Hacker Extraordinaire" 
         },
         {
             "name": "Judy",
-            "site": "http://www.judymou.com",
+            "link": "http://www.judymou.com",
             "title": "Staff Software Engineer"    
         }
     ]
