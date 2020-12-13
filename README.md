@@ -62,6 +62,16 @@ TODO: Talk about membership.
 - track changes to rings via git diff.
 - Enforce participation / auto moderation
 
+
+## Developing
+
+Developed with: node >= v14. [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) is recommended for managing node versions.
+
+This repository is split into multiple parts: 
+
+1. [src](/src) which contains a Next.js app hosted at [openwebring.com](https://openwebring.com). 
+2. [ring](/ring) which contains webring schemas and data.
+
 ## TODO
 
 1. Define schema
@@ -82,7 +92,7 @@ TODO: Talk about membership.
 13. Should web rings be ordered? What should the order be?
 14. Auto generate index
 15. favicon - circularly linked list? 
-
+16. Add tests for validating rings 
 
 ## References
 
