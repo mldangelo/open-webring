@@ -6,7 +6,12 @@ Rings are available at https://openwebring.com/ring/[slug].json. See the [sample
 
 ## Manifesto
 
-Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbiests, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help surfers discover great content. 
+Do you remember when the internet used to be fun? Back in the days before search engines indexed everything, before the internet was hyper-optimized for business, webrings were the de-facto way to discover content. Open-Webring is designed for hobbiests, enthusiasts, artists, and creatives that would like to build inclusive online communities around shared interests and help web-surfers discover great content. 
+
+
+![tesla-coil-webring](/docs/tesla-coil.png)
+*nostalgia from my childhood -from the now defunct webring.org*
+Reproduced from [here](http://www.ke5fx.com/tesla.html).
 
 TODO: Talk about membership.
 
@@ -92,10 +97,13 @@ This repository is split into multiple parts:
 13. Should web rings be ordered? What should the order be?
 14. Auto generate index
 15. favicon - circularly linked list? 
-16. Add tests for validating rings 
+16. Add tests for validating rings
+17. Consider re-implementing the old webring.org api ex http://www.webring.org/cgi-bin/webring?random&ring=TeslaRing or http://www.webring.org/cgi-bin/webring?ring=TeslaRing&id=158&next
+18. Ask for Sage Weil's blessing? 
 
 ## References
 
+1. https://web.archive.org/web/19991013135810/http://webring.org/
 1. Inspired by https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli
 2. https://github.com/hackclub/webring
 3. https://github.com/topics/webring

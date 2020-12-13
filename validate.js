@@ -16,7 +16,7 @@ const schema = {
 glob('ring/**/*.json', (er, files) => {
   files.forEach(file => {
     const json = JSON.parse(fs.readFileSync(file));
-    json.forEach(object => {
+    json.sites.forEach(object => {
       const res = ajv.validate(schema, object);
       console.info(object, res);
     });
