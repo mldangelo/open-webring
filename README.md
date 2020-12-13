@@ -10,7 +10,9 @@ Do you remember when the internet used to be fun? Back in the days before search
 
 
 ![tesla-coil-webring](/docs/tesla-coil.png)
-*nostalgia from my childhood -from the now defunct webring.org*
+
+*nostalgia from my childhood -from the now defunct [webring.org](https://web.archive.org/web/19991013135810/http://webring.org/)*
+
 Reproduced from [here](http://www.ke5fx.com/tesla.html).
 
 TODO: Talk about membership.
