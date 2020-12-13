@@ -1,0 +1,20 @@
+[
+    {
+        "slug": "arthena",
+        "name": "Elite Underground Arthena Employees Ring",
+        "description": "This ring contains only high quality personal websites of employees.",
+        "count": 4
+    },
+    {
+        "slug": "sample",
+        "name": "Sample Webring",
+        "description": "Short description of the pupose of the web ring.",
+        "count": 3
+    },
+    {
+        "slug": "space-potato",
+        "name": "Space Potato Ring",
+        "description": "Step into the depth of potatoes as you have never seen before. This ring contains the personal websites of those who have dedicated themselves to launching potatoes into near-space.",
+        "count": 3
+    }
+]
