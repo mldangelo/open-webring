@@ -1,22 +1,26 @@
-[
-    {
-        "name": "Michael D'Angelo",
-        "site": "https://mldangelo.com",
-        "title": "Software Engineer"
-    },
-    {
-        "name": "Noah Trueblood",
-        "site": "http://notrueblood.com/",
-        "title": "Artist, Software Engineer" 
-    },
-    {
-        "name": "Owen Trueblood",
-        "site": "https://owentrueblood.com/",
-        "title": "Senior Artist, Senior Software Engineer"
-    },
-    {
-        "name": "Duncan Tomlin",
-        "site": "http://www.duncantomlin.com",
-        "title": "Surfing, Skateboarding, Art, Zany Ideas"    
-    }
-]
+{
+    "name": "Elite Underground Arthena Employees Ring",
+    "description": "This ring contains only high quality personal websites of employees.",
+    "sites": [
+        {
+            "name": "Michael D'Angelo",
+            "site": "https://mldangelo.com",
+            "title": "Software Engineer"
+        },
+        {
+            "name": "Noah Trueblood",
+            "site": "http://notrueblood.com/",
+            "title": "Artist, Software Engineer" 
+        },
+        {
+            "name": "Owen Trueblood",
+            "site": "https://owentrueblood.com/",
+            "title": "Senior Artist, Senior Software Engineer"
+        },
+        {
+            "name": "Duncan Tomlin",
+            "site": "http://www.duncantomlin.com",
+            "title": "Surfing, Skateboarding, Art, Zany Ideas"    
+        }
+    ]
+}
