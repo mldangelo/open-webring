@@ -83,5 +83,6 @@ This repository is split into multiple parts:
 1. https://web.archive.org/web/19991013135810/http://webring.org/
 2. Ian's webring - http://www.ianww.com/ (probably would not have worked on this if I hadn't asked to join his webring)
 3. https://github.com/topics/webring - only 8 entries - none are communities
-4. https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli - best webring on github?
+4. https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli - most active webring on github?
 5. https://github.com/hackclub/webring
+6. https://github.com/maxboeck/webring - closest to this project
