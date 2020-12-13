@@ -2,7 +2,7 @@
 
 Join a webring, create your own, or fork this repository and host your own for free.
 
-Rings are available at https://openwebring.com/ring/[slug].json. See the [sample](https://openwebring.com/ring/sample.json) webring for an example.
+Rings are available at https://openwebring.com/ring/[slug].json. See the [sample](ring/sample.json) webring for an example.
 
 ## Manifesto
 

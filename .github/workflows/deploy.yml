@@ -1,0 +1,23 @@
+
+name: Deploy Website to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: |-
+        npm install
+    - name: Build & Deploy Website
+      run: |-
+        npm run deploy
