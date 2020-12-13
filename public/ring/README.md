@@ -1,5 +1,5 @@
 # Ring
 
-All webrings are defined as JSON here.
+The best way to browse rings is at [openwebring.com](https://openwebring.com/)
 
-Ring paths are determined by file names. File names should be dash separated strings.
+All webrings are defined as JSON here. Ring paths are determined by file names. File names should be dash separated strings.

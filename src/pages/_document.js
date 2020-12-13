@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { SiteLinksSearchBoxJsonLd } from 'next-seo';
+import Footer from '../components/footer';
 // Adapted from https://github.com/vercel/next.js/blob/canary/examples/with-google-analytics/pages/_document.js
 
 const { GA_TRACKING_ID } = process.env;
@@ -38,46 +39,7 @@ class MyDocument extends Document {
               { target: 'https://openwebring.com/how-to' }
             ]}
           />
-          <p />
-          <hr width="600" />
-          <div align="center">
-            <center>
-              <table border="0" width="600">
-                <tbody>
-                  <tr>
-                    <td>
-                      <font face="helvetica,arial" size="-2">
-                        Brought to you by{' '}
-                        <a href="https://github.com/mldangelo/open-webring">
-                          Open-Webring.
-                        </a>
-                      </font>
-                    </td>
-                    <td>
-                      <font face="helvetica,arial" size="-2">
-                        Inspired by{' '}
-                        <a href="https://en.wikipedia.org/wiki/Webring#WebRing.com">
-                          Webring Inc. © 2000.
-                        </a>
-                      </font>
-                    </td>
-                    <td>
-                      <p align="center">
-                        <font face="helvetica,arial" size="-2">
-                          © {new Date().getFullYear()} Open-Webring.
-                        </font>
-                      </p>
-                    </td>
-                    <td align="right">
-                      <font face="helvetica,arial" size="-2">
-                        No Rights Reserved
-                      </font>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </center>
-          </div>
+          <Footer />
         </body>
       </Html>
     );

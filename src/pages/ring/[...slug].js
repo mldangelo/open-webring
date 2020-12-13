@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import glob from 'glob';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const renderSite = site => (
@@ -15,7 +16,15 @@ const renderSite = site => (
 
 const Ring = ({ data }) => {
   const router = useRouter();
-  const { slug = [] } = router.query;
+  const { slug = [], index } = router.query;
+
+  useEffect(() => {
+    // TODO revisit this logic. Directs users to the ?index page, but in a janky way
+    router.replace(router.asPath.split('?')[0], undefined, { shallow: true });
+    if (index && data?.sites)
+      return router.push(data.sites[parseInt(index, 10)].link);
+  }, []);
+
   const joinedSlug = slug.join('/');
   return (
     <>

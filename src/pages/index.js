@@ -38,7 +38,7 @@ const Index = () => (
                   <a>List</a>
                 </Link>{' '}
                 <Link
-                  href={`/ring/${ring.slug}?random=${Math.floor(
+                  href={`/ring/${ring.slug}?index=${Math.floor(
                     Math.random() * parseInt(ring.count, 10)
                   )}`}
                 >
