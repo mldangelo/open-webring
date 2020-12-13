@@ -15,9 +15,16 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
     - name: Install Dependencies
       run: |-
         npm install
+    - name: Run Linter
+      run: |-
+        npm run lint
     - name: Build & Deploy Website
       run: |-
         npm run deploy
