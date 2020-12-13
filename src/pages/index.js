@@ -6,8 +6,8 @@ import rings from '../../public/rings.json';
 const Index = () => (
   <>
     <NextSeo
-      title="Open-Webring"
-      description="A free, open-source, MIT licensed webring community. Join a ring, create your own, or host your own."
+      title="Welcome to Open-WebRing!"
+      description="A free, open-source, MIT licensed WebRing Community. Join a ring, create your own, or host your own."
     />
     <h1>Open-Webring</h1>
     <p>
@@ -22,24 +22,37 @@ const Index = () => (
     </p>
 
     <ul>
-      {rings.map(ring => {
-        return (
-          <li>
-            <b>
-              <Link href={`/ring/${ring.slug}.json`}>
-                <a>{ring.name}</a>
+      <font face="helvetica">
+        {rings.map(ring => {
+          return (
+            <li>
+              <b>
+                <Link href={`/ring/${ring.slug}`}>
+                  <a>{ring.name}</a>
+                </Link>
+              </b>
+              <font size="-1">
+                {' '}
+                - {ring.count} sites - <a href="">Home</a>{' '}
+                <Link href={`/ring/${ring.slug}/list`}>
+                  <a>List</a>
+                </Link>{' '}
+                <Link href={`/ring/${ring.slug}/random`}>
+                  <a>Random</a>
+                </Link>
+              </font>{' '}
+              <Link href={`/ring/${ring.slug}/search`}>
+                <a>
+                  <font size="-1">Search Ring</font>
+                </a>
               </Link>
-            </b>
-            <font size="-1">
-              {' '}
-              - {ring.count} sites - <a href="">Home</a>
-            </font>
-            <br />
-            <font face="times">{ring.description}</font>
-            <p />
-          </li>
-        );
-      })}
+              <br />
+              <font face="times">{ring.description}</font>
+              <p />
+            </li>
+          );
+        })}
+      </font>
     </ul>
   </>
 );

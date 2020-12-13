@@ -12,7 +12,7 @@ const siteSchema = {
   properties: {
     name: { type: 'string', minLength: 3, maxLength: 60 },
     title: { type: 'string', minLength: 3, maxLength: 200 },
-    url: { type: 'string', format: 'uri' }
+    link: { type: 'string', format: 'uri' }
   },
   "additionalProperties": false,
 };
