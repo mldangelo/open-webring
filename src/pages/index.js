@@ -34,10 +34,14 @@ const Index = () => (
               <font size="-1">
                 {' '}
                 - {ring.count} sites - <a href="">Home</a>{' '}
-                <Link href={`/ring/${ring.slug}/list`}>
+                <Link href={`/ring/${ring.slug}`}>
                   <a>List</a>
                 </Link>{' '}
-                <Link href={`/ring/${ring.slug}/random`}>
+                <Link
+                  href={`/ring/${ring.slug}?random=${Math.floor(
+                    Math.random() * parseInt(ring.count, 10)
+                  )}`}
+                >
                   <a>Random</a>
                 </Link>
               </font>{' '}
