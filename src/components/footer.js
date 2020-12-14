@@ -22,9 +22,9 @@ const Footer = () => (
                   Inspired by
                   <br />
                   <a href="https://en.wikipedia.org/wiki/Webring#WebRing.com">
-                    Webring Inc. © 2000
-                  </a>
-                  .
+                    Webring Inc.
+                  </a>{' '}
+                  © 2000.
                 </font>
               </td>
               <td align="right">
