@@ -16,7 +16,7 @@ const RingWorld = () => (
             </b>
             <font size="-1">
               {' '}
-              - {ring.count} sites - <a href="">Home</a>{' '}
+              - {ring.count} sites -{' '}
               <Link href={`/ring/${ring.slug}`}>
                 <a>List</a>
               </Link>{' '}
@@ -34,7 +34,7 @@ const RingWorld = () => (
               </a>
             </Link>
             <br />
-            <font face="times">{ring.description}</font>
+            <font>{ring.description}</font>
             <p />
           </li>
         );
@@ -49,18 +49,28 @@ const Index = () => (
       title="Welcome to Open-WebRing!"
       description="A free, open-source, MIT licensed WebRing Community. Join a ring, create your own, or host your own."
     />
-    <h1>Open-Webring</h1>
-    <p>
-      Learn about how to join or create a ring{' '}
-      <Link
-        href="https://github.com/mldangelo/open-webring"
-        as="https://github.com/mldangelo/open-webring"
-      >
-        <a>here</a>
-      </Link>
-      .
-    </p>
-    <RingWorld />
+    <div align="center">
+      <center>
+        <table width="570" border="0">
+          <tbody>
+            <tr>
+              <h1>Open-Webring</h1>
+              <p>
+                Learn about how to join or create a ring{' '}
+                <Link
+                  href="https://github.com/mldangelo/open-webring"
+                  as="https://github.com/mldangelo/open-webring"
+                >
+                  <a>here</a>
+                </Link>
+                .
+              </p>
+            </tr>
+          </tbody>
+          <RingWorld />
+        </table>
+      </center>
+    </div>
   </>
 );
 
