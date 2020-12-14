@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import glob from 'glob';
-import Link from 'next/link';
 import { useEffect } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 
 const renderSite = site => (
   <li key={site.link}>
@@ -28,6 +29,10 @@ const Ring = ({ data }) => {
   const joinedSlug = slug.join('/');
   return (
     <>
+      <NextSeo
+        title={`Open-WebRing | ${data?.name}`}
+        description={data?.description}
+      />
       <div>
         Back to{' '}
         <Link href="/" as="/">
@@ -55,14 +60,16 @@ const Ring = ({ data }) => {
     </>
   );
 };
+
 // This function gets called at build time
 export async function getStaticPaths() {
   const files = glob.sync(path.join(process.cwd(), 'public/ring/**/*.json'));
-  // less stable than regex. couldn't get regex to work
+  // less stable than regex.
   const matches = files.map(
     file => file.replace('.json', '').split('public/ring/')[1]
   );
-  // const pattern = /\/public\/ring\/(.+).json$/g; // extracts file name from ring directory - json extension
+  // TODO: pattern does not match all files. investigate why
+  // const pattern = /\/public\/ring\/(.+).json$/g; // extracts file name from ring directory
   // const matches = files.map((file) => pattern.exec(file));
   return {
     paths: matches.map(slug => {
