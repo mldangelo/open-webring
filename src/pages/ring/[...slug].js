@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 
-const renderSite = site => (
+const renderSite = (site) => (
   <li key={site.link}>
     <Link href={site.link} as={site.link}>
       <a>{site.name}</a>
@@ -66,29 +66,26 @@ export async function getStaticPaths() {
   const files = glob.sync(path.join(process.cwd(), 'public/ring/**/*.json'));
   // less stable than regex.
   const matches = files.map(
-    file => file.replace('.json', '').split('public/ring/')[1]
+    (file) => file.replace('.json', '').split('public/ring/')[1]
   );
   // TODO: pattern does not match all files. investigate why
   // const pattern = /\/public\/ring\/(.+).json$/g; // extracts file name from ring directory
   // const matches = files.map((file) => pattern.exec(file));
   return {
-    paths: matches.map(slug => {
-      return { params: { slug: [slug] } };
-    }),
-    fallback: false
+    paths: matches.map((slug) => ({ params: { slug: [slug] } })),
+    fallback: false,
   };
 }
 
 // This also gets called at build time
 export async function getStaticProps({ params }) {
   const { slug = [] } = params;
-  const joinedSlug = slug.join('/');
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
   // const res = await fetch(`http://localhost:3000/ring/${path}.json`);
   // const data = await res.json();
   const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), `public/ring/${joinedSlug}.json`))
+    fs.readFileSync(path.join(process.cwd(), `public/ring/${slug.join('/')}.json`))
   );
 
   // Pass post data to the page via props
@@ -96,7 +93,7 @@ export async function getStaticProps({ params }) {
     props: { data },
     // Re-generate the post at most once per second
     // if a request comes in
-    revalidate: 1
+    revalidate: 1,
   };
 }
 

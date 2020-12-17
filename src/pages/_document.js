@@ -22,14 +22,22 @@ class MyDocument extends Document {
                 dangerouslySetInnerHTML={{
                   __html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}', { page_path: window.location.pathname });`
+              gtag('config', '${GA_TRACKING_ID}', { page_path: window.location.pathname });`,
                 }}
               />
             </>
           )}
-          <link href="/style.css" rel="stylesheet" type="text/css"/>
-          <link href="//unpkg.com/sanitize.css" rel="stylesheet" type="text/css"/>
-          <link href="//unpkg.com/@csstools/normalize.css" rel="stylesheet" type="text/css"/>
+          <link href="/style.css" rel="stylesheet" type="text/css" />
+          <link
+            src="//unpkg.com/sanitize.css"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <link
+            src="//unpkg.com/@csstools/normalize.css"
+            rel="stylesheet"
+            type="text/css"
+          />
         </Head>
         <body>
           <Main />
@@ -39,7 +47,7 @@ class MyDocument extends Document {
             potentialActions={[
               { target: 'https://openwebring.com' },
               { target: 'https://openwebring.com/about' },
-              { target: 'https://openwebring.com/how-to' }
+              { target: 'https://openwebring.com/how-to' },
             ]}
           />
           <Footer />

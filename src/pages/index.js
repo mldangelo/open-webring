@@ -4,11 +4,10 @@ import { NextSeo } from 'next-seo';
 import rings from '../../public/rings.json';
 
 const RingWorld = () => (
-  <div style={{width: '570px'}}>
-  <ul>
-    <font face="helvetica">
-      {rings.map(ring => {
-        return (
+  <div style={{ width: '570px' }}>
+    <ul>
+      <font face="helvetica">
+        {rings.map((ring) => (
           <li key={ring.slug}>
             <b>
               <Link href={`/ring/${ring.slug}`}>
@@ -21,11 +20,7 @@ const RingWorld = () => (
               <Link href={`/ring/${ring.slug}`}>
                 <a>List</a>
               </Link>{' '}
-              <Link
-                href={`/ring/${ring.slug}?index=${Math.floor(
-                  Math.random() * parseInt(ring.count, 10)
-                )}`}
-              >
+              <Link href={`/ring/${ring.slug}?random}`}>
                 <a>Random</a>
               </Link>
             </font>{' '}
@@ -38,10 +33,9 @@ const RingWorld = () => (
             <font>{ring.description}</font>
             <p />
           </li>
-        );
-      })}
-    </font>
-  </ul>
+        ))}
+      </font>
+    </ul>
   </div>
 );
 
@@ -52,20 +46,19 @@ const Index = () => (
       description="A free, open-source, MIT licensed WebRing Community. Join a ring, create your own, or host your own."
     />
     <div className="center">
+      <h1>Open-Webring</h1>
+      <p>
+        Learn about how to join or create a ring{' '}
+        <Link
+          href="https://github.com/mldangelo/open-webring"
+          as="https://github.com/mldangelo/open-webring"
+        >
+          <a>here</a>
+        </Link>
+        .
+      </p>
 
-          <h1>Open-Webring</h1>
-          <p>
-            Learn about how to join or create a ring{' '}
-            <Link
-              href="https://github.com/mldangelo/open-webring"
-              as="https://github.com/mldangelo/open-webring"
-            >
-              <a>here</a>
-            </Link>
-            .
-          </p>
-
-          <RingWorld />
+      <RingWorld />
     </div>
   </>
 );
