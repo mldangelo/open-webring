@@ -85,7 +85,9 @@ export async function getStaticProps({ params }) {
   // const res = await fetch(`http://localhost:3000/ring/${path}.json`);
   // const data = await res.json();
   const data = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), `public/ring/${slug.join('/')}.json`))
+    fs.readFileSync(
+      path.join(process.cwd(), `public/ring/${slug.join('/')}.json`)
+    )
   );
 
   // Pass post data to the page via props
