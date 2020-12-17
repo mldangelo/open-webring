@@ -27,11 +27,9 @@ class MyDocument extends Document {
               />
             </>
           )}
-          <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-          <link
-            href="https://unpkg.com/@csstools/normalize.css"
-            rel="stylesheet"
-          />
+          <link href="/style.css" rel="stylesheet" type="text/css"/>
+          <link href="//unpkg.com/sanitize.css" rel="stylesheet" type="text/css"/>
+          <link href="//unpkg.com/@csstools/normalize.css" rel="stylesheet" type="text/css"/>
         </Head>
         <body>
           <Main />

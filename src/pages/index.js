@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 import rings from '../../public/rings.json';
 
 const RingWorld = () => (
+  <div style={{width: '570px'}}>
   <ul>
     <font face="helvetica">
       {rings.map(ring => {
@@ -41,6 +42,7 @@ const RingWorld = () => (
       })}
     </font>
   </ul>
+  </div>
 );
 
 const Index = () => (
@@ -49,27 +51,21 @@ const Index = () => (
       title="Welcome to Open-WebRing!"
       description="A free, open-source, MIT licensed WebRing Community. Join a ring, create your own, or host your own."
     />
-    <div align="center">
-      <center>
-        <table width="570" border="0">
-          <tbody>
-            <tr>
-              <h1>Open-Webring</h1>
-              <p>
-                Learn about how to join or create a ring{' '}
-                <Link
-                  href="https://github.com/mldangelo/open-webring"
-                  as="https://github.com/mldangelo/open-webring"
-                >
-                  <a>here</a>
-                </Link>
-                .
-              </p>
-            </tr>
-          </tbody>
+    <div className="center">
+
+          <h1>Open-Webring</h1>
+          <p>
+            Learn about how to join or create a ring{' '}
+            <Link
+              href="https://github.com/mldangelo/open-webring"
+              as="https://github.com/mldangelo/open-webring"
+            >
+              <a>here</a>
+            </Link>
+            .
+          </p>
+
           <RingWorld />
-        </table>
-      </center>
     </div>
   </>
 );

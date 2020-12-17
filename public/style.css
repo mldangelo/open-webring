@@ -8,7 +8,7 @@
 body {
     background-color: var(--background-color);
     color: var(--primary-color);
-    font-size: 13px;
+    font-size: 15px;
     font-family: helvetica, arial;
 }
 
@@ -39,4 +39,11 @@ a:link {
 }
 a:visited {
     color: var(--visited-link-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
