@@ -27,6 +27,7 @@ class MyDocument extends Document {
               />
             </>
           )}
+          <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
           <link href="/style.css" rel="stylesheet" type="text/css" />
           <link
             src="//unpkg.com/sanitize.css"
