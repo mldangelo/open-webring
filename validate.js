@@ -3,7 +3,7 @@
 const fs = require('fs');
 const { promisify } = require('util');
 const glob = require('glob');
-const Ajv = require('ajv'); // Should validation come from something like typescript or reason?
+const Ajv = require('ajv').default; // Should validation come from something like typescript or reason?
 
 const ajv = new Ajv();
 
