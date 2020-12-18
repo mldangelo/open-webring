@@ -13,7 +13,7 @@
     "start": "next start",
     "export": "next export",
     "predeploy": "rm -rf node_modules/.cache && npm run validate && npm run build && npm run export",
-    "deploy": "gh-pages -d out && rm -rf out/"
+    "deploy": "gh-pages -t true -d out && rm -rf out/"
   },
   "repository": {
     "type": "git",
