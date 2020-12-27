@@ -7,6 +7,9 @@
 /.next/
 out
 
+# create-react-app
+build
+
 # Logs
 logs
 *.log
