@@ -1,5 +1,5 @@
 {
-  "name": "open-webring",
+  "name": "@open-webring/site",
   "version": "0.0.1",
   "description": "join or create webrings",
   "main": "validate.js",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/mldangelo/open-webring#readme",
   "dependencies": {
     "@open-webring/react": "file:packages/react-component",
+    "@open-webring/schema": "file:packages/schema",
     "ajv": "^7.0.2",
     "gh-pages": "^3.1.0",
     "glob": "^7.1.6",
