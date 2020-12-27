@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/mldangelo/open-webring#readme",
   "dependencies": {
+    "@open-webring/react": "file:packages/react-component",
     "ajv": "^7.0.2",
     "gh-pages": "^3.1.0",
     "glob": "^7.1.6",
@@ -53,7 +54,7 @@
     "presets": [
       "next/babel"
     ]
-  }, 
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"

@@ -1,7 +1,12 @@
 {
   "name": "@open-webring/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mldangelo/open-webring.git",
+    "directory": "packages/react-component"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -11,11 +16,15 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
+  "keywords": [
+    "webring",
+    "open-webring"
+  ],
+  "main": "src/WebRing.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [

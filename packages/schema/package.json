@@ -1,0 +1,20 @@
+{
+  "name": "@open-webring/schema",
+  "version": "0.0.1",
+  "description": "Open-WebRing schema definitions",
+  "main": "validate.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mldangelo/open-webring.git",
+    "directory": "packages/schema"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webring",
+    "open-webring"
+  ],
+  "author": "Michael D'Angelo (michael.l.dangelo@gmail.com)",
+  "license": "MIT"
+}
