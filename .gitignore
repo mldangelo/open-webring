@@ -1,5 +1,8 @@
 # Adapted from https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
 
+# MacOS
+.DS_Store
+
 # next.js
 /.next/
 out
