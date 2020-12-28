@@ -87,3 +87,4 @@ This repository is split into multiple parts:
 4. https://github.com/XXIIVV/webring https://github.com/ckipp01/webring-cli - most active webring on github?
 5. https://github.com/maxboeck/webring - closest to this project
 6. https://github.com/hackclub/webring
+7. https://github.com/susam/10kbclub
